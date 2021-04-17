@@ -1,12 +1,11 @@
 import React from 'react'
-
+import "bootstrap/dist/css/bootstrap.min.css"
 import './styles/app.scss'
+import Login from './components/Login'
 
 const App = () => {
     return (
-        <div>
-            <h1>Spotify</h1>
-        </div>
+        <Login />
     )
 }
 
