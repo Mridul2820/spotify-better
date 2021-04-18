@@ -1,6 +1,10 @@
-import React from 'react'
 
-const TrackSearchResult = ({ track }) => {
+const TrackSearchResult = ({ track, chooseTrack }) => {
+    
+    const handlePlay = () => {
+        chooseTrack(track)
+    }
+
     return (
         <div 
             className="d-flex align-item-center m-2" 
