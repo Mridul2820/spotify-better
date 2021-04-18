@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import SpotifyWebApi from 'spotify-web-api-node'
 import { Container, Form } from 'react-bootstrap'
 import useAuth from '../hooks/useAuth'
+import TrackSearchResult from './TrackSearchResult'
 
 const spotifyApi = new SpotifyWebApi({
     clientId: '39d95f2d59ee4bab928ec2de5d12d11a',
@@ -39,14 +40,14 @@ const Dashboard = ({ code }) => {
                     track.album.images[0]
                 )
                 return {
-                    artist : track.artists,
+                    artists : track.artists,
                     title: track.name,
                     uri: track.uri,
                     albumUrl: smallestAlbumImage.url,
                 }
             }))
         })
-        
+
         return () => (cancel = true)
 
     }, [search, accessToken])
@@ -60,7 +61,13 @@ const Dashboard = ({ code }) => {
                 onChange={e => setSearch(e.target.value)}
             />
             <div className="flex-grow-1 my-2" style={{overflowY: 'auto'}}>
-                Songs
+            {searchResults.map(track => (
+                <TrackSearchResult
+                    track={track}
+                    key={track.uri}
+                    // chooseTrack={chooseTrack}
+                />
+            ))}
             </div>
             <div className="">Bottom</div>
         </Container>
