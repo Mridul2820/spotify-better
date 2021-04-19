@@ -12,7 +12,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
 app.get('/', (req, res) => {
-    res.send("Hello World")
+    res.send("This the backend of Spotify Better by Mridul")
 });
 
 app.post("/refresh", (req, res) => {
@@ -68,4 +68,4 @@ app.get("/lyrics", async (req, res) => {
     res.json({ lyrics })
 })
 
-app.listen(process.env.PORT || 3001)
+app.listen(process.env.PORT || 5000, () => console.log('server has started'))

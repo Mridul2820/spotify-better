@@ -12,6 +12,6 @@ const Login = () => {
             </a>
         </Container>
     )
-}
+} 
 
 export default Login
