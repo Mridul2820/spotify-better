@@ -75,14 +75,22 @@ const Dashboard = ({ code }) => {
     }, [search, accessToken])
 
     return (
-        <Container className="d-flex flex-column py-2" style={{height: '100vh'}}>
+        <Container 
+            className="d-flex flex-column py-2" 
+            style={{
+                height: '100vh',
+                maxWidth: "600px"
+            }}
+        >
             <Form.Control 
                 type="search" 
                 placeholder="Search Songs / Artists"
                 value={search}
                 onChange={e => setSearch(e.target.value)}
             />
-            <div className="flex-grow-1 my-2" style={{overflowY: 'auto'}}>
+            <div 
+            className="flex-grow-1 my-2" 
+            style={{overflowY: 'auto', width: '100%'}}>
             {searchResults.map(track => (
                 <TrackSearchResult
                     track={track}
