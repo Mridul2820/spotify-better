@@ -18,3 +18,6 @@ The Project can be viewd at [Vercel](https://spotify-better.vercel.app/)
 |iOS	                    | Safari, Chrome	        | ✕ Not Supported  |
 
  Note : * IE 11 or above. Must be on Windows 8.1 or above.
+ 
+ ### Screenshot 
+<img align="left" src="https://github.com/Mridul2820/apps-react/blob/master/public/image/spotify-better.png" alt="React App" width="100%">
