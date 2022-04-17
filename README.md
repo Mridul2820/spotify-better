@@ -1,9 +1,9 @@
-# Spotify React App
+# Spotify-Better React App
 
-The Project can be viewd at [Here](https://spotify-better.vercel.app/)
+[Preview Of the Project](https://spotify-better.vercel.app/)
 
-### Requirements
-- Authenticated users must have a valid [Spotify Premium](https://www.spotify.com/in-en/premium/) subscription for playback
+### Requirements : 
+- Authenticated users must have a valid [Spotify Premium](https://www.spotify.com/in-en/premium/) subscription for playback features
 - A supported web browser running on the user’s device
 - Supported Browsers - 
 
